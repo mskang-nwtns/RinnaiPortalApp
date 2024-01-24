@@ -1,0 +1,485 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/login_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+    <com.jrummyapps.android.widget.TwoDScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="380.5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="16.7dp"
+                    android:layout_height="16.7dp"
+                    android:layout_marginLeft="12.7dp"
+                    android:layout_marginTop="25.3dp"
+                    android:src="@drawable/index_item" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginTop="22.7dp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="@string/agency_06_activity_service_info_title"
+                    android:textColor="#16133e"
+                    android:textSize="18.7sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29.3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="고객명"
+                    android:textSize="13.3sp"/>
+
+                <EditText
+                    android:id="@+id/et_agency_menu_06_name"
+                    android:layout_width="244dp"
+                    android:layout_height="29.3dp"
+                    android:background="@drawable/calendar_bt_bg_normal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="13.3sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29.3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="전화번호"
+                    android:textSize="13.3sp"/>
+                <RelativeLayout
+                    android:layout_width="244dp"
+                    android:layout_height="29.3dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/et_agency_menu_06_hp1"
+                        android:layout_width="70dp"
+                        android:layout_height="29.3dp"
+                        android:background="@drawable/calendar_bt_bg_normal"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="13.3sp"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/et_agency_menu_06_hp2"
+                        android:layout_toRightOf="@+id/et_agency_menu_06_hp1"
+                        android:layout_width="70dp"
+                        android:layout_height="29.3dp"
+                        android:background="@drawable/calendar_bt_bg_normal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="13.3sp"
+                        android:maxLength="4"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/et_agency_menu_06_hp3"
+                        android:layout_width="70dp"
+                        android:layout_height="29.3dp"
+                        android:background="@drawable/calendar_bt_bg_normal"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="5dp"
+                        android:textSize="13.3sp"
+                        android:maxLength="4"
+                        android:inputType="number"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29.3dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:text="이메일"
+                    android:textSize="13.3sp"/>
+
+                <EditText
+                    android:id="@+id/et_agency_menu_06_email"
+                    android:layout_width="244dp"
+                    android:layout_height="29.3dp"
+                    android:background="@drawable/calendar_bt_bg_normal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="이메일"
+                    android:textSize="13.3sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="99.9dp"
+                android:layout_marginTop="21.3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:text="주소"
+                    android:textSize="13.3sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="21"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="244dp"
+                        android:layout_height="29.3dp"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="176.3dp"
+                            android:layout_height="29.3dp"
+                            android:background="@drawable/calendar_bt_bg_normal" >
+                         <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_post_no"
+                            android:layout_centerVertical="true"
+                            android:paddingLeft="5dp"
+                            android:text="주소"
+                            android:textSize="13.3sp" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/btn_agency_menu_06_address_search"
+                            android:layout_width="42dp"
+                            android:layout_height="29.3dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/search_btn_selector">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="찾기"
+                                android:textColor="#ffffff"
+                                android:textSize="12.7dp"
+                                android:singleLine="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="244dp"
+                        android:layout_height="29.3dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/calendar_bt_bg_normal">
+
+                        <TextView
+                            android:id="@+id/tv_addr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:singleLine="true"
+                            android:text="주소"
+                            android:textSize="13.3sp" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:layout_width="244dp"
+                        android:layout_height="29.3dp"
+                        android:background="@drawable/calendar_bt_bg_normal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:id="@+id/et_addr2"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:text=""
+                        android:textSize="13.3sp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:text="제품선택"
+                    android:textSize="13.3sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calendar_bt_bg_normal">
+                        <Spinner
+                            android:id="@+id/sp_agency_06_master"
+                            android:spinnerMode="dropdown"
+                            android:layout_width="244dp"
+                            android:layout_height="36dp"
+
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/calendar_bt_bg_normal">
+                    <Spinner
+                        android:id="@+id/sp_agency_06_sub"
+                        android:spinnerMode="dropdown"
+                        android:layout_width="244dp"
+                        android:layout_height="36dp"
+                        />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29.3dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="모델명"
+                    android:textSize="13.3sp"/>
+
+                <EditText
+                    android:id="@+id/et_agency_menu_06_model_name"
+                    android:layout_width="244dp"
+                    android:layout_height="29.3dp"
+                    android:background="@drawable/calendar_bt_bg_normal"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:singleLine="true"
+                    android:textSize="13.3sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29.3dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="방문일자"
+                    android:textSize="13.3sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_agency_06_service_info_date"
+                    android:layout_width="244dp"
+                    android:layout_height="26.3dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/calendar_selector">
+
+                    <TextView
+                        android:id="@+id/tv_agency_06_service_info_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="0dp"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textColor="#4564e8"
+                        android:textSize="12.7sp" />
+
+                    <ImageView
+                        android:layout_width="16.7dp"
+                        android:layout_height="16.7dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/calendar_bt" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29.3dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="고장증상"
+                    android:textSize="13.3sp"/>
+
+                <EditText
+                    android:id="@+id/et_agency_menu_06_content"
+                    android:layout_width="244dp"
+                    android:layout_height="29.3dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/calendar_bt_bg_normal"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="2dp"
+                    android:singleLine="true"
+                    android:textSize="13.3sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33.3dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:text="동의여부"
+                    android:textSize="13.3sp"/>
+                <RelativeLayout
+                    android:layout_width="244dp"
+                    android:layout_height="33.3dp">
+                    <TextView
+                        android:layout_width="200.7dp"
+                        android:layout_height="33.3dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="보증기간 이후 제품은 출장료와 \n수리비/부품료가 부과됩니다."
+                        android:textSize="13.3sp"/>
+
+                    <CheckBox
+                        android:id="@+id/cb_receive_as"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/user_id_save_check_box"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:button="@null" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="61.3dp"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="94.7dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="34.7dp"
+                    android:text="처리내용"/>
+                <EditText
+                    android:id="@+id/et_agency_menu_06_content_answer"
+                    android:layout_width="244dp"
+                    android:layout_height="61.3dp"
+                    android:minLines="2"
+                    android:gravity="top"
+                    android:background="@drawable/calendar_bt_bg_normal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="13.3sp"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="12.7dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="13dp">
+
+                <kr.co.rinnai.dms.common.custom.CustomButtonView
+                    android:id="@+id/btn_receive_as_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    app:pressSymbol="@drawable/alldelete_icon_press"
+                    app:symbol="@drawable/alldelete_icon_press"
+                    app:text="@string/value_del_item" />
+
+
+                <kr.co.rinnai.dms.common.custom.CustomButtonView
+                    android:id="@+id/btn_receive_as_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    app:pressSymbol="@drawable/save_icon_press"
+                    app:symbol="@drawable/save_icon"
+                    app:text="@string/value_receive_as_save" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.jrummyapps.android.widget.TwoDScrollView>
+</LinearLayout>

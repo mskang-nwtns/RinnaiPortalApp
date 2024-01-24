@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_header_row_two"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:gravity="center"
+            android:id="@+id/tv_agency_03_activity_list_header_tran_no"
+            android:textColor="#615ca9"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_header_row_one"
+            android:gravity="center"
+            android:id="@+id/tv_agency_03_activity_list_header_drv_name"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#535263"
+            android:lineSpacingExtra="-11sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/text_view_header_row_two"
+            android:gravity="center"
+            android:id="@+id/tv_agency_03_activity_list_header_drv_tel_no"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#615ca9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/cascade_grey"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_header_row_one"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:gravity="center"
+            android:lineSpacingExtra="-11sp"
+            android:id="@+id/tv_agency_03_activity_list_header_warehouse_name"
+            android:textColor="#858398"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/text_view_header_row_two"
+            android:gravity="center"
+            android:id="@+id/tv_agency_03_activity_list_header_cust_name"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#615ca9" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_header_row_one"
+            android:gravity="center"
+            android:id="@+id/tv_agency_03_activity_list_header_time"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="16sp"
+            android:autoSizeStepGranularity="5dp"
+            android:textColor="#858398" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

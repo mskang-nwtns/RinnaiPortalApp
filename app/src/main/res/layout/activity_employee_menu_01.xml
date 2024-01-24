@@ -1,0 +1,312 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="25.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:id="@+id/rl_employee_01_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="22.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/employee_01_activity_title"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="26.3dp"
+            android:layout_marginTop="20.7dp"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@+id/rl_employee_01_title">
+            <TextView
+                android:id="@+id/tv_employee_01_sale_working_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="15.7sp"
+                android:textColor="#4564e8"
+                android:text="영업일수"/>
+            <TextView
+                android:id="@+id/tv_employee_01_sale_working_date"
+                android:layout_toRightOf="@+id/tv_employee_01_sale_working_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="15.7sp"
+                android:textColor="#4564e8"
+                android:text="5/20"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_employee_01_date"
+            android:layout_width="100dp"
+            android:layout_height="26.3dp"
+            android:layout_marginTop="20.7dp"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/tv_employee_01_sale_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="12.7sp"
+                android:textColor="#4564e8"
+                android:text="2019/09/26"/>
+
+            <ImageView
+                android:layout_width="16.7dp"
+                android:layout_height="16.7dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/calendar_bt"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_top_title_01"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_top_title_02"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_top_title_03"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_top_title_04"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_top_title_05"
+            android:layout_marginRight="10dp"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wms_top_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="40"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:overScrollMode="never" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25.7dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@drawable/select_delete_bg_normal"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="동일한 매출진도 내용을 위, 아래 비교해서 검토해 보세요"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_bottom_title_01"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_bottom_title_02"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_bottom_title_03"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_bottom_title_04"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+        <ImageView
+            android:layout_width="14.7dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/slide_tab_arrow" />
+
+        <TextView
+            android:id="@+id/tv_bottom_title_05"
+            android:layout_marginRight="10dp"
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/wms_bottom_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="40"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="16dp"
+        android:overScrollMode="never" />
+</LinearLayout>

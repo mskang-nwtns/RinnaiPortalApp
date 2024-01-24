@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="86dp"
+    android:layout_height="29.3dp"
+    android:background="@drawable/logout_bt_normal"
+    android:id="@+id/button_bg"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="11dp"
+        android:textSize="10.5sp"
+        android:textColor="#6a6977"
+        android:text="로그아웃"/>
+    <ImageView
+        android:id="@+id/symbol"
+        android:layout_width="12.7dp"
+        android:layout_height="12dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="61.3dp"
+        android:src="@drawable/logout_icon"/>
+</RelativeLayout>

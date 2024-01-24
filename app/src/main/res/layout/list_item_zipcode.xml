@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="304dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:id="@+id/tv_common_address_search_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="11111"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/tv_common_address_search_zipcode"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp" >
+                
+                <TextView
+                    android:id="@+id/tv_road_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="도로명"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/bg_blue_rect"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_common_address_search_road"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:text="도로명 텍스트" 
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_jibun_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="지번"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_marginRight="5dp" 
+                    android:background="@drawable/bg_default_rect"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_common_address_search_jibun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.5"
+                    android:text="지번 텍스트"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="70" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_header_row_one">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="구  분"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                	android:textColor="#3d3c49"
+                    android:textSize="12.7sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_header_row_two" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="매출액"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textColor="#3d3c49"
+                    android:textSize="12.7sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_header_row_one" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="부가액"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textColor="#3d3c49"
+                    android:textSize="12.7sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_header_row_two" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="부가율"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textColor="#3d3c49"
+                    android:textSize="12.7sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_listview_row_one" >
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="월간계획"
+                    android:gravity="center|left"
+                    android:paddingLeft="9.3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:textColor="#615ca9"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_sale_plan_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:id="@+id/tv_value_added_plan_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_m_plan_ratio_value_added"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:id="@+id/tv_title_day_plan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="9.3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:textColor="#615ca9"
+                    android:text="18일계획"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_sale_day_plan_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:id="@+id/tv_value_added_day_plan_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_d_plan_ratio_value_added"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_listview_row_one">
+
+                <TextView
+                    android:id="@+id/tv_title_day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="9.3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:textColor="#615ca9"
+                    android:text="18일실적" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_sale_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_one" >
+                <TextView
+                    android:id="@+id/tv_value_added_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_ratio_value_added"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_listview_row_one">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="9.3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:textColor="#615ca9"
+                    android:text="월계획대비" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_m_plan_rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:gravity="center|right"
+                    android:paddingRight="9.7dp"
+                    android:text="274.5"
+                    android:textColor="#858398"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:id="@+id/tv_m_plan_rate_value_added"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:gravity="center|right"
+                    android:paddingRight="9.7dp"
+                    android:text="274.5"
+                    android:textColor="#858398"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="9.3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:textColor="#615ca9"
+                    android:text="일계획대비" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_d_plan_rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:gravity="center|right"
+                    android:paddingRight="9.7dp"
+                    android:text="274.5"
+                    android:textColor="#858398"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:id="@+id/tv_d_plan_rate_value_added"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30.7dp"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:id="@+id/tv_title_day_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="9.3dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:textColor="#615ca9"
+                    android:text="18일당일실적" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:id="@+id/tv_d_sale_amt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text="274.5"
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_one" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="@color/text_view_listview_row_two" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|right"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="#858398"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:paddingRight="9.7dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,388 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="15.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="12.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/agency_03_activity_title"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="27.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/agency_03_activity_middle_title_01"
+            android:textColor="#61607b"
+            android:textSize="13.3sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_agency_03_date"
+            android:layout_width="180dp"
+            android:layout_height="26.3dp"
+            android:layout_marginTop="20.7dp"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/calendar_selector">
+
+            <TextView
+                android:id="@+id/tv_agency_03_order_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="0dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:text=""
+                android:textColor="#4564e8"
+                android:textSize="12.7sp" />
+
+            <ImageView
+                android:layout_width="16.7dp"
+                android:layout_height="16.7dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/calendar_bt" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/red"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/iv_agency_03_location"
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="20.7dp"
+            android:src="@drawable/location_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_agency_03_location"
+            android:layout_marginLeft="6.3dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/agency_03_activity_middle_title_02"
+            android:textColor="#61607b"
+            android:textSize="13.3sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26.3dp"
+            android:layout_marginTop="22.7dp"
+            android:layout_marginLeft="34dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26.3dp"
+                android:textSize="12sp"
+                android:textColor="#81818a"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:text="도착지 : "/>
+            <TextView
+                android:id="@+id/tv_agency_03_activity_cust_name"
+                android:layout_width="wrap_content"
+                android:layout_height="26.3dp"
+                android:textSize="12sp"
+                android:textColor="#81818a"
+                android:fontFamily="@font/nanum_gothic_bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="26.3dp"
+            android:layout_marginTop="50.7dp"
+            android:layout_marginLeft="34dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26.3dp"
+                android:textSize="12sp"
+                android:textColor="#81818a"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:text="주소 : "/>
+            <TextView
+                android:id="@+id/tv_agency_03_activity_cust_address"
+                android:layout_width="wrap_content"
+                android:layout_height="26.3dp"
+                android:textSize="12sp"
+                android:textColor="#81818a"
+                android:fontFamily="@font/nanum_gothic_bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp">
+        <RelativeLayout
+            android:id="@+id/rl_agency_03_top_menu_distributes"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/release_top_bg_select">
+
+            <TextView
+                android:id="@+id/tv_agency_03_top_menu_cust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/agency_03_activity_top_menu_01"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="20.5dp"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/iv_agency_03_top_menu_cust_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_agency_03_top_menu_cust"
+                android:src="@drawable/tab_focus_item" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_agency_03_top_menu_cargo"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/release_top_bg_disable">
+            <TextView
+                android:id="@+id/tv_agency_03_top_menu_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/agency_03_activity_top_menu_02"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="20.5dp"
+                android:textColor="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/iv_agency_03_top_menu_model_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_agency_03_top_menu_model"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/tab_focus_item"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_two"
+            android:text="배차번호"
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/text_view_header_row_one"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:gravity="center"
+            android:text="기사명"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_two"
+            android:gravity="center"
+            android:text="전화번호"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_one"
+            android:text="출발지"
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_two"
+            android:gravity="center"
+            android:text="도착지"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_one"
+            android:gravity="center"
+            android:text="예정시간"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12.7dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="5.3dp"
+        android:paddingTop="3.7dp">
+
+        <ListView
+            android:id="@+id/lv_agency_03_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="vertical"
+            android:dividerHeight="1px"
+            android:divider="#c7c8ca"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_one"
+            android:text="제품명"
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_two"
+            android:gravity="center"
+            android:text="가스"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_one"
+            android:gravity="center"
+            android:text="년월"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@color/text_view_header_row_one"
+            android:text="수량"
+            android:gravity="center"
+            android:textColor="#a2a0bc"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12.7dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="5.3dp"
+        android:paddingTop="3.7dp">
+
+        <ListView
+            android:id="@+id/lv_agency_03_delivery_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:groupIndicator="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="vertical"
+            android:dividerHeight="1px"
+            android:divider="#c7c8ca"/>
+    </LinearLayout>
+
+</LinearLayout>

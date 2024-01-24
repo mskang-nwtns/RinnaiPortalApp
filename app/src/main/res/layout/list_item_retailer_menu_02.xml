@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_retailer_02_activity_list_header_addr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_two"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="@string/installation_02_activity_list_header_item_address_name"
+                android:textColor="#615ca9"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/cascade_grey"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/tv_retailer_02_activity_list_header_model"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/text_view_listview_row_one"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:lineSpacingExtra="-11sp"
+                android:text="@string/installation_02_activity_list_header_item_model"
+                android:textColor="#16133e"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_retailer_02_activity_list_header_type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_two"
+                android:gravity="center"
+                android:text="@string/installation_02_activity_list_header_item_gas"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#858398"
+                android:lineSpacingExtra="-11sp" />
+
+            <TextView
+                android:id="@+id/tv_retailer_02_activity_list_header_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_one"
+                android:gravity="center"
+                android:text="@string/installation_02_activity_list_header_item_photo"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#588efc"
+                android:lineSpacingExtra="-11sp" />
+
+            <TextView
+                android:id="@+id/tv_retailer_02_activity_list_header_sign"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_two"
+                android:gravity="center"
+                android:text="@string/installation_02_activity_list_header_item_signature"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:autoSizeMinTextSize="30sp"
+                android:autoSizeMaxTextSize="80sp"
+                android:autoSizeStepGranularity="5dp"
+                android:textColor="#fd9178"
+                android:lineSpacingExtra="-11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

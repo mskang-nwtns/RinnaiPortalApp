@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <EditText
+            android:id="@+id/et_agency_menu_07_search_value"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:id = "@+id/btn_agency_menu_07_model_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="삭제"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/btn_agency_menu_07_model_insert"
+            android:layout_toLeftOf="@+id/btn_agency_menu_07_model_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="모델 등록"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30.7dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_height="match_parent"
+            android:background="@color/text_view_header_row_one"
+            android:text="대기종"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#6f87ee"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3.5"
+            android:layout_height="match_parent"
+            android:background="@color/text_view_header_row_two"
+            android:text="모델명"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#6f87ee"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:background="@color/text_view_header_row_one"
+            android:text="가스"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#6f87ee"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:background="@color/text_view_header_row_two"
+            android:text="납품수량"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="6sp"
+            android:autoSizeMaxTextSize="15sp"
+            android:autoSizeStepGranularity="3dp"
+            android:gravity="center"
+            android:textColor="#6f87ee"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_agency_menu_07_model_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingRight="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_image_file_1"
+                android:text="사진 1"
+                android:textSize="16sp"
+                android:textColor="#6f87ee"/>
+
+            <RelativeLayout
+                android:id = "@+id/btn_zoom_image_1"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/search_btn_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.7dp"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="6.2sp"
+                    android:layout_centerInParent="true"
+                    android:text="확대"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_agency_menu_07_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_area"
+                android:layout_marginTop="18.3dp"
+                android:layout_below="@+id/tv_image_file_1">
+                <ImageView
+                    android:id="@+id/iv_spot_pic_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 1"
+                    android:src="@drawable/shooting_icon_02"
+                    android:layout_centerInParent="true"/>
+                <RelativeLayout
+                    android:id = "@+id/btn_add_image_1"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/search_btn_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.7dp"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="6.2sp"
+                        android:layout_centerInParent="true"
+                        android:text="이미지"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id = "@+id/btn_add_camera_1"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/search_btn_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.7dp"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="6.2sp"
+                        android:layout_centerInParent="true"
+                        android:text="카메라"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_image_file_2"
+                android:text="사진 2"
+                android:textSize="16sp"
+                android:textColor="#6f87ee"/>
+            <RelativeLayout
+                android:id = "@+id/btn_zoom_image_2"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/search_btn_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.7dp"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="6.2sp"
+                    android:layout_centerInParent="true"
+                    android:text="확대"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_area"
+                android:layout_marginTop="18.3dp"
+                android:layout_below="@+id/tv_image_file_2">
+                <ImageView
+                    android:id="@+id/iv_spot_pic_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사진 1"
+                    android:src="@drawable/shooting_icon_02"
+                    android:layout_centerInParent="true"/>
+                <RelativeLayout
+                    android:id = "@+id/btn_add_image_2"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/search_btn_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.7dp"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="6.2sp"
+                        android:layout_centerInParent="true"
+                        android:text="이미지"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id = "@+id/btn_add_camera_2"
+                    android:layout_width="90dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/search_btn_selector">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.7dp"
+                        android:textColor="#ffffff"
+                        android:lineSpacingExtra="6.2sp"
+                        android:layout_centerInParent="true"
+                        android:text="카메라"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

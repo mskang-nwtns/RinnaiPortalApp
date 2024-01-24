@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/tv_agency_06_activity_list_header_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_listview_row_one"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:lineSpacingExtra="-11sp"
+            android:text="20-04-20"
+            android:textColor="#16133e"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_agency_06_activity_list_header_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_listview_row_two"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="소비자"
+            android:maxLines="2"
+            android:lines="2"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#16133e" />
+        <TextView
+            android:id="@+id/tv_agency_06_activity_list_header_gubun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_listview_row_one"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="보일러\n> 전체"
+            android:maxLines="2"
+            android:lines="2"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#16133e" />
+        <TextView
+            android:id="@+id/tv_agency_06_activity_list_header_visit_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_listview_row_two"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="5dp"
+            android:text="20-04-20"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#16133e"
+            android:lineSpacingExtra="-11sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

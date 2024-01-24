@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:id="@+id/tv_location_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/text_view_listview_row_one"
+                android:gravity="center_vertical"
+                android:paddingLeft="10.7dp"
+                android:text="@string/title_release_location"
+                android:textSize="16sp"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:textColor="#615ca9"
+                android:lineSpacingExtra="-11sp" />
+            <TextView
+                android:id="@+id/tv_cell_detail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_two"
+                android:gravity="center"
+                android:text="@string/value_cell_detail"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:textColor="#858398"
+                android:lineSpacingExtra="-11sp" />
+            <TextView
+                android:id="@+id/tv_cell_make"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_one"
+                android:gravity="center"
+                android:text="@string/value_cell_make"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:textColor="#615ca9"
+                android:lineSpacingExtra="-11sp"/>
+            <TextView
+                android:id="@+id/tv_order_seq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_two"
+                android:gravity="center"
+                android:text="@string/value_order_product_order_count"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:textColor="#858398"
+                android:lineSpacingExtra="-11sp" />
+        </LinearLayout>
+
+</LinearLayout>

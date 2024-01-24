@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">Smart DMS</string>
+   <!-- <string name="com.crashlytics.useFirebaseAppId">true</string>-->
+    <string name="act_status_now">현재</string>
+    <string name="act_status_avg">평균</string>
+    <string name="act_status_now_temperature">현재 온도</string>
+    <string name="act_status_avg_temperature">평균 온도</string>
+    <string name="act_status_now_humidity">현재 습도</string>
+    <string name="act_status_avg_humidity">평균 습도</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_user_no">사번</string>
+    <string name="prompt_password">비밀번호</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="title_release_location">로케이션</string>
+    <string name="title_release_agency">대리점</string>
+    <string name="title_release_release_screen">출고화면</string>
+    <string name="title_release_agency_barcode">제품 상차</string>
+    <string name="title_retailer_release_agency_barcode">양판점 제품 상차</string>
+    <string name="title_retailer_release_agency_instatllation">제품 설치</string>
+
+    <string name="title_release_coupang">쿠팡배송</string>
+
+    <string name="title_product_move_handling">제품 이동</string>
+
+    <string name="msg_title_noti">알림</string>
+
+    <string name="msg_order_report_barcode_not_validation">잘못된 바코드입니다.</string>
+    <string name="msg_order_report_barcode_not_result">데이터가 존재하지 않습니다.</string>
+    <string name="msg_order_report_barcode_not_location">작업 지시서에 존재하지 않는 위치입니다.</string>
+    <string name="msg_order_report_complet">Picking 작업을 완료하였습니다.</string>
+    <string name="msg_agency_order_report_complet">Picking 작업을 완료한 대리점입니다.</string>
+
+    <string name="msg_server_error_result">서버 에러 발생</string>
+    <string name="value_order_product_gas_type">가스</string>
+    <string name="value_order_product_model_name">제품명</string>
+    <string name="value_order_product_order_box_count">BOX</string>
+    <string name="value_order_product_order_count">수량</string>
+    <string name="value_order_product_location">위치</string>
+    <string name="value_order_product_model_code">모델 코드</string>
+
+    <string name="value_order_product_agency_name">대리점</string>
+    <string name="value_order_product_agency_code">대리점 코드</string>
+
+    <string name="value_blank"></string>
+    <string name="value_not_equals_select_location">동일한 로케이션을 선택해주세요.</string>
+
+    <string name="wms_07_activity_location_search_item_none">위치조회할 제품을 선택하여 주세요.</string>
+    <string name="wms_07_activity_location_search_items">위치조회할 제품을 한가지만 선택하여 주세요.</string>
+
+    <string name="title_received">입하</string>
+    <string name="title_warehousing">입고</string>
+    <string name="title_release">출고</string>
+    <string name="title_activity_04">출하</string>
+    <string name="title_product_location_search">위치조회</string>
+    <string name="title_inventory_du_diligence">재고실사</string>
+    <string name="title_movement_instructions">이동지시</string>
+    <string name="title_movement_instructions_barcode">이동지시</string>
+
+    <string name="value_print">출력</string>
+    <string name="value_clear">초기화</string>
+    <string name="value_send">전송</string>
+    <string name="value_confirmation">확정</string>
+    <string name="value_add_product">제품 추가</string>
+    <string name="value_ok">확인</string>
+    <string name="value_cell_make">년월</string>
+    <string name="value_cell_detail">NO</string>
+    <string name="value_receive_as">A/S 접수</string>
+    <string name="value_receive_as_save">저장</string>
+
+    <string name="value_add_all">모두 등록</string>
+    <string name="value_add_item">등록</string>
+    <string name="value_del_item">삭제</string>
+    <string name="value_del_all">모두 삭제</string>
+    <string name="value_del_selection">선택 삭제</string>
+    <string name="value_search_location">위치조회</string>
+
+    <string name="value_error_not_select_location">로케이션을 선택해주세요.</string>
+    <string name="value_error_not_select_product">제품을 선택해주세요.</string>
+    <string name="value_error_no_changes_data">제품 수량에 변경이 없습니다.</string>
+    <string name="value_error_box_no_changes_data">박스 수량에 변경이 없습니다.</string>
+
+    <string name="warehouse_07_activity_model_search">제품 검색</string>
+
+    <string name="employee_01_activity_title">매출진도</string>
+    <string name="employee_02_activity_title">오더재고</string>
+    <string name="employee_03_activity_title">매장재고</string>
+    <string name="employee_04_activity_title">제품 바코드</string>
+    <string name="employee_05_activity_title">창고별 재고</string>
+    <string name="employee_06_activity_title">출고현황</string>
+    <string name="employee_08_activity_title">소비자 이중 체크</string>
+
+    <string name="agency_01_activity_title">미출고 조회</string>
+
+    <string name="agency_01_activity_list_header_item">아이템</string>
+    <string name="agency_01_activity_list_header_model_name">모델명</string>
+    <string name="agency_01_activity_list_header_model_code">코드</string>
+    <string name="agency_01_activity_list_header_model_gas_type">가스</string>
+    <string name="agency_01_activity_list_header_model_price">단가</string>
+    <string name="agency_01_activity_list_header_unshipped">미출고</string>
+    <string name="agency_01_activity_list_header_shipped">출고</string>
+    <string name="agency_01_activity_list_header_today_shipped">당일출고</string>
+    <string name="agency_01_activity_list_header_order_number">오더번호</string>
+
+    <string name="agency_02_activity_title">주문 현황</string>
+
+    <string name="agency_02_activity_title_order_day">주문일</string>
+
+    <string name="agency_02_activity_list_header_date">일자</string>
+    <string name="agency_02_activity_list_header_order_no">주문번호</string>
+    <string name="agency_02_activity_list_header_order">주문</string>
+    <string name="agency_02_activity_list_header_receive">접수</string>
+    <string name="agency_02_activity_list_header_release">출고</string>
+    <string name="agency_02_activity_list_header_cancel">취소</string>
+
+
+    <string name="agency_03_activity_title">배송조회</string>
+    <string name="agency_03_activity_middle_title_01">배송 일자</string>
+    <string name="agency_03_activity_middle_title_02">배송지 정보</string>
+
+    <string name="agency_03_activity_top_menu_01">배차</string>
+    <string name="agency_03_activity_top_menu_02">화물택배</string>
+
+    <string name="agency_04_activity_title">판매 이관</string>
+    <string name="agency_04_activity_trans_date_title">이관일</string>
+    <string name="agency_04_activity_trans_type_title">이관 구분</string>
+    <string name="agency_04_activity_cus_sms_title">조치여부</string>
+    <string name="agency_04_activity_sales_status_title">판매여부</string>
+
+    <string name="agency_04_activity_dialog_title">판매 이관 등록</string>
+    <string name="agency_04_activity_sales_title">판매</string>
+
+    <string name="agency_04_activity_list_header_type">구분</string>
+    <string name="agency_04_activity_list_header_date">이관일자</string>
+    <string name="agency_04_activity_list_header_hope_model">희망기종</string>
+    <string name="agency_04_activity_list_header_facility_code">설비코드</string>
+
+    <string name="agency_06_activity_title">서비스 접수</string>
+
+    <string name="agency_06_activity_service_info_title">서비스 접수 등록</string>
+
+
+    <string name="agency_06_activity_list_header_date">등록일</string>
+    <string name="agency_06_activity_list_header_name">성명</string>
+    <string name="agency_06_activity_list_header_type">제품분류</string>
+    <string name="agency_06_activity_list_header_visit_date">방문요청일</string>
+
+
+    <string name="agency_07_activity_title">신축 현장 등록</string>
+    <string name="agency_07_list_activity_title">현장 검색</string>
+
+
+
+
+
+
+    <string name="login_activity_pass_fail">비밀번호가 틀렸습니다.</string>
+    <string name="login_activity_user_not_found">사용자가 없습니다.</string>
+    <string name="login_activity_unlicensed_agency">접근권한이 없습니다.</string>
+
+    <string name="login_activity_validation_id">아이디를 입력해 주세요.</string>
+    <string name="login_activity_validation_pw">비밀번호를 입력해 주세요.</string>
+    <string name="login_activity_validation_phone">휴대폰 정보가 일치하지 않습니다.</string>
+
+    <string name="value_error_barcode_printing">바코드 출력중입니다.\n 잠시 후 다시 출력하여 주세요.</string>
+
+    <string name="employee_03_activity_top_menu_01">매장</string>
+    <string name="employee_03_activity_top_menu_02">모델</string>
+    <string name="employee_03_activity_top_menu_03">창고</string>
+
+
+    <string name="employee_06_activity_title_order_day">출고일</string>
+
+    <string name="employee_06_activity_top_menu_02">거래처</string>
+    <string name="employee_06_activity_top_menu_03">ITEM 구분</string>
+
+    <string name="employee_06_activity_list_header_model_name">모델명</string>
+    <string name="employee_06_activity_list_header_gas">가스</string>
+    <string name="employee_06_activity_list_header_uprice_code">코드</string>
+    <string name="employee_06_activity_list_header_release_date">출고일</string>
+    <string name="employee_06_activity_list_header_qty">수량</string>
+    <string name="employee_06_activity_list_header_uprie">단가</string>
+    <string name="employee_06_activity_list_header_amt">금액(VAT)</string>
+
+    <string name="employee_06_activity_list_detail_order_date">주문일자</string>
+    <string name="employee_06_activity_list_detail_order_item_name">구분</string>
+    <string name="employee_06_activity_list_detail_warehouse_name">창고</string>
+    <string name="employee_06_activity_list_detail_driver_name">기사명</string>
+    <string name="employee_06_activity_list_detail_tel_no">연락처</string>
+    <string name="employee_06_activity_list_detail_remark">비고</string>
+
+
+    <string name="employee_07_activity_title_order_day">기준일</string>
+    <string name="employee_07_activity_list_header_client_name">고객명</string>
+<!--
+
+     <string name="employee_07_activity_list_header_sale_date​">출고일자</string>
+     <string name="employee_07_activity_list_header_out_req_date">출고예정</string>
+
+     <string name="employee_07_activity_list_detail_order_date">오더일자</string>
+     <string name="employee_07_activity_list_detail_tel_no​">소비자전화</string>
+     <string name="employee_07_activity_list_detail_addr">소비자주소</string>
+     <string name="employee_07_activity_list_detail_remark">오더 비고사항</string>
+     <string name="employee_07_activity_list_detail_driver_name">기사명</string>
+     <string name="employee_07_activity_list_detail_d_tel​">기사전화</string>
+
+-->
+    <string name="delivery_02_activity_title">제품 바코드 조회</string>
+
+    <string name="common_address_search_title">주소 검색</string>
+
+
+    <string name="common_list_header_model_name">모델명</string>
+    <string name="common_list_header_qty">수량</string>
+
+    <string name="common_use_network">다른작업을 진행중입니다. 잠시 후 다시 시도해 주세요.</string>
+
+    <string name="title_zipcode">우편번호 검색</string>
+    <string name="title_sub_zipcode">우편번호 검색</string>
+    <string name="address_search_max_result">검색 결가가 너무 많습니다.\n 검색어 에를 참조하여 검색하시기 바랍니다.</string>
+
+
+    <string name="installation_01_activity_title">양판점 제품 상차</string>
+    <string name="installation_02_activity_title">작업 내역</string>
+
+    <string name="installation_02_activity_list_header_item_address_name">설치내역 (주소 + 고객명)</string>
+    <string name="installation_02_activity_list_header_item_model">모델</string>
+    <string name="installation_02_activity_list_header_item_gas">가스</string>
+    <string name="installation_02_activity_list_header_item_photo">사진</string>
+    <string name="installation_02_activity_list_header_item_signature">사인</string>
+
+    <string name="warehouse_04_activity_lps_suspend">출하정지된 제품입니다.</string>
+
+</resources>

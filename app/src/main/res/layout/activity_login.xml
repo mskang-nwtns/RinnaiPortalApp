@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="152.7dp"
+        android:layout_height="38.3dp"
+        android:layout_marginTop="115dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_r_logo"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228.3dp">
+
+        <EditText
+            android:layout_centerHorizontal="true"
+            android:id="@+id/etUserId"
+            android:layout_width="274.8dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="41.7dp"
+            android:layout_marginTop="16dp"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:nextFocusDown="@+id/etPassword"/>
+
+        <TextView
+            android:layout_alignLeft="@+id/etUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12.8dp"
+            android:textColor="#cf000d"
+            android:text="USER ID"/>
+
+        <CheckBox
+            android:id="@+id/cb_rinnai_id"
+            android:layout_alignLeft="@+id/etUserId"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/user_id_save_check_box"
+            android:button="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cb_save_id"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="70dp"
+            android:gravity="end"
+            android:letterSpacing="-0.03"
+            android:lineSpacingExtra="9sp"
+            android:text="USER ID 자동저장"
+            android:textColor="#47446f"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/cb_save_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/etUserId"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/user_id_save_check_box"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_rips_id"
+            android:layout_toRightOf="@+id/cb_rinnai_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+
+            android:layout_marginTop="70dp"
+            android:gravity="left"
+            android:letterSpacing="-0.03"
+            android:lineSpacingExtra="9sp"
+            android:text="그룹웨어 계정"
+            android:textColor="#47446f"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etUserId"
+            android:layout_marginTop="109.7dp"
+            android:textSize="12.8dp"
+            android:textColor="#cf000d"
+            android:text="PASSWORD"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="274.8dp"
+            android:layout_height="41dp"
+            android:layout_alignLeft="@+id/etUserId"
+            android:layout_marginTop="126.7dp"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            android:inputType="textPassword"/>
+
+        <CheckBox android:id="@+id/check_box_password_see"
+            android:layout_width="24dp"
+            android:layout_height="13.3dp"
+            android:layout_marginLeft="269.7dp"
+            android:layout_marginTop="368.3dp"
+            android:background="@drawable/check_box_password_see"
+            android:button="@null"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80.7dp"
+        android:textSize="10dp"
+        android:textColor="#7c7e8b"
+        android:gravity="center_horizontal"
+        android:text="Rinnai Copyright 2019 RINNAI Corp.\nAll Rights Reserved."/>
+    <TextView
+        android:id="@+id/tv_login_activity_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43.7dp"
+        android:textSize="20dp"
+        android:textColor="#7c7e8b"
+        android:gravity="center_horizontal"
+        android:text="App Version : 1.0.0"/>
+    <RelativeLayout
+        android:id = "@+id/btn_login"
+        android:layout_width="280.8dp"
+        android:layout_height="53.3dp"
+        android:background="@drawable/login_btn_selector"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="147.7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14.dp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="6.2sp"
+            android:layout_centerInParent="true"
+            android:text="로그인"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_login_activity_master_menu"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:id="@+id/btn_login_activity_menu1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_btn_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="물류용"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_login_activity_menu2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/search_btn_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="영업용"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:id="@+id/btn_login_activity_menu3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_btn_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="대리점용"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_login_activity_menu4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/search_btn_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="배송기사용"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/btn_login_activity_menu5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_btn_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="설치기사용"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/btn_login_activity_menu6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/search_btn_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/nanum_gothic_extra_bold"
+                    android:text="판매사원용" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

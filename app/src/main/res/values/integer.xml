@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="forgotPassword">16.6dp</dimen>
+    <dimen name="defaultSize">15dp</dimen>
+    <dimen name="titleSize">18dp</dimen>
+    <dimen name="subTitleSize">16dp</dimen>
+
+    <integer name="passwordMin">4</integer>
+    <integer name="passwordMax">16</integer>
+    <integer name="roomConLimit">25</integer>
+
+</resources>

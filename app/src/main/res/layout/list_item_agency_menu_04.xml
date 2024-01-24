@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/text_view_header_row_two"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:gravity="center"
+            android:id="@+id/tv_agency_04_activity_list_header_trans_gubun"
+            android:textColor="#615ca9"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/text_view_header_row_one"
+            android:gravity="center"
+            android:id="@+id/tv_agency_04_activity_list_header_trans_date"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#535263"
+            android:lineSpacingExtra="-11sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/text_view_header_row_two"
+            android:gravity="center"
+            android:id="@+id/tv_agency_04_activity_list_header_c_model_name"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#615ca9"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/text_view_header_row_one"
+            android:gravity="center"
+            android:id="@+id/tv_agency_04_activity_list_header_c_code"
+            android:fontFamily="@font/nanum_gothic_bold"
+            android:textSize="16sp"
+            android:textColor="#615ca9"/>
+
+    </LinearLayout>
+</LinearLayout>

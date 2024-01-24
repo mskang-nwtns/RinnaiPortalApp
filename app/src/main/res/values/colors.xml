@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="rol_white">#99FFFFFF</color>
+    <color name="dim_white">#80FFFFFF</color>
+    <color name="black">#ff000000</color>
+    <color name="hint_gray">#66000000</color>
+    <color name="hint_gray_alpha">#40000000</color>
+    <color name="month_calendar_font">#90000000</color>
+    <color name="aplist_back">#4D000000</color>
+    <color name="aplist_front">#FFFFFFFF</color>
+    <color name="wifi_subtitle">#CCFFFFFF</color>
+    <color name="trans">#00000000</color>
+    <color name="dim">#FF1a1a1a</color>
+    <color name="popDim">#B3000000</color>
+    <color name="purple">#AA66CC</color>
+    <color name="red">#ffff4444</color>
+    <color name="green">#ff99cc00</color>
+    <color name="yellow">#FFFFBB33</color>
+    <color name="custom_day_background">#fff5f5f5</color>
+    <color name="custom_day_background_enable">#fff5b536</color>
+    <color name="custom_day_background_line">#ffe6e6e6</color>
+    <color name="custom_day_text_view_sunday">#ffe03d3d</color>
+    <color name="custom_day_text_view_other">#ff969696</color>
+    <color name="custom_day_text_view_save">#ff000000</color>
+
+    <color name="custom_alarm_off_text_view">#ffc2beb0</color>
+    <color name="custom_alarm_on_text_view">#fffcfcfc</color>
+    <color name="custom_alarm_off_day_text_view">#ff332f29</color>
+    <color name="custom_alarm_on_day_text_view">#FFFFAE00</color>
+
+    <color name="cascade_base_top_color">#ffee695a</color>
+    <color name="cascade_base_color">#fff6554d</color>
+    <color name="cascade_white">#ffffffff</color>
+    <color name="cascade_grey">#fff1f1f1</color>
+    <color name="cascade_dimm">#80666666</color>
+    <color name="reserve_hour_cell_highlight">#ff2c313d</color>
+    <color name="reserve_hour_cell_default">#ffb5b9c4</color>
+    <color name="reserve_day_of_week_default">#a7abb2</color>
+    <color name="line_grey">#CECED5</color>
+    <color name="box_grey">#F4F4F7</color>
+    <color name="popup_press_color">#EEEEF0</color>
+    <color name="trans_color">#00ff0000</color>
+
+    <color name="custom_button_normal_text_color">#0a0916</color>
+    <color name="custom_button_click_text_color">#ffffff</color>
+    <color name="text_view_header_row_one">#e4e4f4</color>
+    <color name="text_view_header_row_two">#ddddf1</color>
+
+    <color name="text_view_listview_row_one">#f5f6f8</color>
+    <color name="text_view_listview_row_two">#ffffff</color>
+
+
+    <color name="text_view_list_view_row_select">#cf000d</color>
+
+    <color name="text_view_listview_row_value_one">#615ca9</color>
+    <color name="text_view_listview_row_value_two">#858398</color>
+
+    <color name="employee_menu_01_title_tv_normal">#a2a0bc</color>
+    <color name="employee_menu_01_title_tv_select">#16133e</color>
+
+    <color name="employee_menu_03_store_stock_value">#0054FF</color>
+
+    <color name="agency_menu_06_list_row_value_order">#16133e</color>
+    <color name="agency_menu_06_list_row_value_a2">#9c53d5</color>
+    <color name="agency_menu_06_list_row_value_a5">#169f57</color>
+    <color name="agency_menu_06_list_row_value_a4">#6173f6</color>
+    <color name="dig_month_calendar_selected_month">#6173f6</color>
+
+
+
+
+
+</resources>

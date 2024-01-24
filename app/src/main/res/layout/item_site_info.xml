@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/tv_site_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:singleLine="true"
+                android:background="@color/text_view_listview_row_one"
+                android:gravity="center|left"
+                android:text="현장명"
+                android:paddingLeft="9.7dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textColor="#615ca9"
+                android:lineSpacingExtra="-11sp"
+                android:ellipsize="marquee"/>
+            <TextView
+                android:id="@+id/tv_sale_ym"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/text_view_listview_row_two"
+                android:gravity="center|left"
+                android:paddingLeft="4dp"
+                android:text="납품년월"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#858398"
+                android:lineSpacingExtra="-11sp" />
+            <TextView
+                android:id="@+id/tv_house_cnt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/text_view_listview_row_one"
+                android:gravity="center|right"
+                android:paddingRight="4dp"
+                android:text="세대수"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#615ca9"
+                android:lineSpacingExtra="-11sp" />
+        </LinearLayout>
+
+</LinearLayout>

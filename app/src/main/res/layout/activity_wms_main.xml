@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wms.activity.WmsMainActivity">
+
+    <!---24dp-->
+    <RelativeLayout
+        android:id="@+id/top_layer"
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:layout_marginTop="30.3dp"
+        android:layout_marginLeft="33.7dp"
+        android:layout_marginRight="36dp">
+        <ImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="31.3dp"
+            android:layout_height="31.3dp"
+            android:src="@drawable/user_icon"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10.7sp"
+            android:layout_toRightOf="@+id/iv_user_icon"
+            android:layout_marginLeft="11dp"
+            android:textColor="#cf000d"
+            android:lineSpacingExtra="-5.7sp"
+            android:text="ABC12345"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_department"
+            android:layout_toRightOf="@+id/iv_user_icon"
+            android:layout_marginLeft="9.7dp"
+            android:textSize="14sp"
+            android:textColor="#16133e"
+            android:lineSpacingExtra="-9sp"
+            android:text="홍길동" />
+
+        <kr.co.rinnai.dms.common.custom.CustomButtonLogoutView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_logout"
+            app:symbol="@drawable/logout_icon"
+            app:pressSymbol="@drawable/logout_icon"
+            android:layout_centerVertical="true"
+            app:text="로그아웃" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layer"
+        android:layout_marginTop="29.3dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginLeft="33.7dp"
+        android:layout_marginRight="34.3dp">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/ll_01">
+        <!--
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_agency_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="대리점 바코드"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_picking_release"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Picking 작업 지시서"/>
+
+        </RelativeLayout>
+        -->
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/menu_01"
+            app:symbol="@drawable/menu_01_normal"
+            app:pressSymbol="@drawable/menu_01_press"
+            app:text="입하" />
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/menu_02"
+            app:symbol="@drawable/menu_02_normal"
+            app:pressSymbol="@drawable/menu_02_press"
+            app:text="입고"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/ll_02"
+            android:layout_below="@+id/ll_01"
+            android:layout_marginTop="9.7dp">
+
+            <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/menu_03"
+                app:symbol="@drawable/menu_03_normal"
+                app:pressSymbol="@drawable/menu_03_press"
+                app:text="Picking" />
+            <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/menu_04"
+                app:symbol="@drawable/menu_04_normal"
+                app:pressSymbol="@drawable/menu_04_press"
+                app:text="출하"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:id="@+id/ll_03"
+            android:layout_below="@+id/ll_02"
+            android:layout_marginTop="9.7dp">
+
+            <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/menu_05"
+                app:symbol="@drawable/menu_05_normal"
+                app:pressSymbol="@drawable/menu_05_press"
+                app:text="위치조회" />
+            <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/menu_06"
+                app:symbol="@drawable/menu_07_normal"
+                app:pressSymbol="@drawable/menu_07_press"
+                app:text="재고실사"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layer"
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="33.7dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="36.7dp"
+        android:background="@color/cascade_dimm">
+    </RelativeLayout>
+</RelativeLayout>

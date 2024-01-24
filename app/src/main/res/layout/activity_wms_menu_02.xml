@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="25.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="22.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/title_warehousing"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+
+        <ImageView
+            android:layout_width="76.7dp"
+            android:layout_height="31.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22.7dp"
+            android:src="@drawable/menu_02_normal" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contents_area02_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/et_ware_house_location_barcode"
+            android:background="@color/white"
+            android:layout_width="330.3dp"
+            android:layout_height="38.3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="16sp"
+            android:textColor="#4564e8"
+            android:lineSpacingExtra="-11sp"
+            android:gravity="center_vertical|end"
+            android:text=""
+            android:paddingRight="12.3dp"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            android:singleLine="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_movement_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_weight="40"
+        android:paddingTop="16.3dp"
+        android:orientation="vertical" 
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp"
+            android:orientation="vertical" >
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/text_view_header_row_one"
+                android:gravity="center"
+                android:text="@string/value_order_product_model_name"
+                android:textSize="16sp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textColor="#16133e"
+                android:lineSpacingExtra="-11sp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/value_order_product_gas_type"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_one"
+                    android:gravity="center"
+                    android:text="@string/value_cell_make"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/value_order_product_order_count"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+
+			</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="horizontal"
+            android:layout_marginTop="2.3dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="8.0dp">
+
+            <ListView
+                android:id="@+id/lv_location_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical"
+                android:dividerHeight="1px"
+                android:divider="#c7c8ca"
+                android:groupIndicator="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3.7dp"
+        android:layout_marginLeft="16.3dp"
+        android:layout_marginRight="17.3dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <kr.co.rinnai.dms.common.custom.CustomAllMoveButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_add_all"
+                app:symbol="@drawable/all_t_arrow"
+                app:pressSymbol="@drawable/all_t_arrow"
+                app:text="전체"
+                android:clickable="true"/>
+            <!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_add_all"
+                android:text="@string/value_add_all"/>
+            -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+            <kr.co.rinnai.dms.common.custom.CustomAllMoveButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/btn_del_all"
+                app:symbol="@drawable/all_d_arrow"
+                app:pressSymbol="@drawable/all_d_arrow"
+                app:text="전체"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginLeft="75.3dp">
+
+            <kr.co.rinnai.dms.common.custom.CustomMoveButtonView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/move_item"
+                app:symbol="@drawable/d_move_arrow"
+                app:pressSymbol="@drawable/d_move_arrow"
+                android:clickable="true"/>
+<!--
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_add_item"
+                android:text="@string/value_add_item"/>
+-->
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_movement_product"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:orientation="vertical"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/text_view_header_row_one"
+                    android:gravity="center"
+                    android:text="@string/value_order_product_model_name"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/value_order_product_gas_type"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_one"
+                    android:gravity="center"
+                    android:text="@string/value_cell_make"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/value_order_product_order_count"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="20dp">
+
+            <ListView
+                android:id="@+id/lv_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical"
+                android:dividerHeight="1px"
+                android:divider="#c7c8ca"
+                android:groupIndicator="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,396 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="25.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:id="@+id/tv_wms_activity_08_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="22.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/title_release_coupang"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+
+        <ImageView
+            android:layout_width="76.7dp"
+            android:layout_height="31.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22.7dp"
+            android:layout_marginRight="20.7dp"
+            android:src="@drawable/menu_01_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="12.7dp"
+        android:layout_marginRight="14dp">
+
+        <EditText
+            android:id="@+id/et_reading_instructions_barcode"
+            android:layout_toLeftOf="@+id/btn_reading_instructions_barcode"
+            android:layout_width="330.3dp"
+            android:layout_height="38.3dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/contents_area02_bg"
+            android:ems="10"
+            android:gravity="center_vertical|left"
+            android:lineSpacingExtra="-11sp"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#4564e8"
+            android:textSize="20dp" />
+        <RelativeLayout
+            android:id = "@+id/btn_reading_instructions_barcode"
+            android:layout_width="80dp"
+            android:layout_height="38.3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="입력"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id = "@+id/btn_wms_activity_clear"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="완료"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/btn_wms_activity_reset"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:visibility="invisible"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/text_view_list_view_row_select"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="초기화"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/btn_wms_activity_submit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="전송"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:layout_marginLeft="12.7dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/text_view_header_row_one"
+                android:gravity="center"
+                android:text="@string/value_order_product_model_name"
+                android:textSize="16sp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textColor="#16133e"
+                android:lineSpacingExtra="-11sp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_header_row_two"
+                android:gravity="center"
+                android:text="@string/value_order_product_gas_type"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#16133e"
+                android:lineSpacingExtra="-11sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_header_row_one"
+                android:gravity="center"
+                android:text="지시"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#16133e"
+                android:lineSpacingExtra="-11sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_header_row_two"
+                android:gravity="center"
+                android:text="@string/value_order_product_order_box_count"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#16133e"
+                android:lineSpacingExtra="-11sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_header_row_one"
+                android:gravity="center"
+                android:text="@string/value_order_product_order_count"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="16sp"
+                android:textColor="#16133e"
+                android:lineSpacingExtra="-11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_read_product_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:listSelector="@android:color/transparent"
+            android:dividerHeight="1px"
+            android:scrollbars="vertical"
+            android:divider="#c7c8ca"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12.7dp"
+        android:layout_marginRight="14dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/agency_barcode_count_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="15.7dp"
+                        android:textSize="19.3sp"
+                        android:textColor="#4564e8"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="지시수"/>
+                    <TextView
+                        android:id="@+id/tv_total_instructions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:layout_marginLeft="88.7dp"
+                        android:textSize="33.3sp"
+                        android:textColor="#282645"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="0"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/agency_barcode_count_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="15.7dp"
+                        android:textSize="19.3sp"
+                        android:textColor="#4564e8"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="작업수"/>
+                    <TextView
+                        android:id="@+id/tv_total_operations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:layout_marginLeft="88.7dp"
+                        android:textSize="33.3sp"
+                        android:textColor="#282645"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="0"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/agency_barcode_count_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="15.7dp"
+                        android:textSize="19.3sp"
+                        android:textColor="#4564e8"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="서버전송 수 "/>
+                    <TextView
+                        android:id="@+id/tv_success_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:layout_marginLeft="88.7dp"
+                        android:textSize="33.3sp"
+                        android:textColor="#282645"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="0"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/agency_barcode_count_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="15.7dp"
+                        android:textSize="19.3sp"
+                        android:textColor="#575c72"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="남은수"/>
+                    <TextView
+                        android:id="@+id/tv_remaining_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:layout_marginLeft="88.7dp"
+                        android:textSize="33.3sp"
+                        android:textColor="#282645"
+                        android:fontFamily="@font/nanum_gothic_bold"
+                        android:text="0"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="50dp"
+        android:text="전송하기" />-->
+
+
+
+
+</LinearLayout>

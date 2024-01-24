@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="25.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="22.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/agency_07_activity_title"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_agency_menu_07"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_weight="40"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="10dp"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:id="@+id/rl_agency_07_bottom_layer"
+        android:layout_width="match_parent"
+        android:layout_height="34.7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="33.7dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="20.7dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="34.7dp"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/iv_agency_page_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/page_1_on"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/page_center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_agency_page_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/page_2_off"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <RelativeLayout
+            android:id = "@+id/btn_agency_menu_07_save"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:id = "@+id/tv_agency_menu_07_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="저장"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id = "@+id/btn_agency_menu_07_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="삭제"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id = "@+id/btn_agency_menu_07_close"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="닫기"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

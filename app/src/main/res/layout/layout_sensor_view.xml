@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <RelativeLayout
+            android:id="@+id/layout_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/act_status_layout_all_border" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="2공장 기계실"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titleSize"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="온.습도 센서 1"
+                    android:textColor="#202020"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/subTitleSize"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="온.습도 센서 2"
+                    android:textColor="#202020"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/subTitleSize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_avg_temperature"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_now_temperature"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_avg_temperature"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_now_temperature"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/avgTemp1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowTemp1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/avgTemp2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowTemp2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_avg_humidity"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_now_humidity"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_avg_humidity"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_now_humidity"
+                    android:textSize="@dimen/defaultSize"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/avgHum1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowHum1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/avgHum2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowHum2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="수류 감지 센서 1"
+                    android:textColor="#202020"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/subTitleSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="수류 감지 센서 2"
+                    android:textColor="#202020"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/subTitleSize"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowWoi1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowWoi2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="소음 감지 센서"
+                    android:textColor="#202020"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="@dimen/subTitleSize"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_avg"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/avgLou1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_line_11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text="@string/act_status_now"
+                    android:fontFamily="sans-serif-medium"
+                	android:textStyle="bold"
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@drawable/act_status_layout_non_border" >
+
+                <TextView
+                    android:id="@+id/nowLou1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dip"
+                    android:text=""
+                    android:textSize="@dimen/defaultSize" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

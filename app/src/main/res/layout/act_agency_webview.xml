@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/tv_employee_07_activity_item_type"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="12.7dp"
+			android:layout_centerVertical="true"
+			android:fontFamily="@font/nanum_gothic_extra_bold"
+			android:text="@string/employee_06_activity_top_menu_03"
+			android:textColor="#61607b"
+			android:textSize="13.3sp" />
+
+		<Spinner
+			android:id="@+id/sp_employee_07_activity_item_type"
+			android:layout_toRightOf="@+id/tv_employee_06_activity_item_type"
+			android:layout_marginRight="10dp"
+			android:spinnerMode="dropdown"
+			android:layout_width="100dp"
+			android:layout_height="34dp"
+			android:layout_marginLeft="20dp"
+			android:layout_alignParentRight="true"/>
+
+	</RelativeLayout>
+	<WebView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="9"
+		android:id="@+id/webView">
+	</WebView>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_barcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/text_view_listview_row_two"
+                android:gravity="center"
+                android:text="125822200500623"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:textColor="#858398"
+                android:textSize="23dp"/>
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_view_listview_row_one"
+                android:gravity="center"
+                android:text="작업"
+                android:fontFamily="@font/nanum_gothic_extra_bold"
+                android:textColor="#615ca9"
+                android:textSize="23dp"/>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="33.7dp"
+    android:layout_marginRight="34.3dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/ll_01">
+        <!--
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_agency_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="대리점 바코드"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_picking_release"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Picking 작업 지시서"/>
+
+        </RelativeLayout>
+        -->
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/menu_08"
+            app:symbol="@drawable/menu_05_01_normal"
+            app:pressSymbol="@drawable/menu_05_01_press"
+            app:text="신축현장" />
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/menu_02"
+            app:symbol="@drawable/menu_05_02_normal"
+            app:pressSymbol="@drawable/menu_05_02_press"
+            app:text="@string/agency_02_activity_title"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+
+        android:id="@+id/ll_02"
+        android:layout_below="@+id/ll_01"
+        android:layout_marginTop="9.7dp">
+
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/menu_03"
+            app:symbol="@drawable/menu_05_03_normal"
+            app:pressSymbol="@drawable/menu_05_03_press"
+            app:text="@string/agency_03_activity_title"
+            android:visibility="invisible"/>
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/menu_04"
+            app:symbol="@drawable/menu_05_04_normal"
+            app:pressSymbol="@drawable/menu_05_04_press"
+            app:text="@string/agency_04_activity_title"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/ll_03"
+        android:layout_below="@+id/ll_02"
+        android:layout_marginTop="9.7dp">
+
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/menu_05"
+            app:symbol="@drawable/menu_05_05_normal"
+            app:pressSymbol="@drawable/menu_05_05_press"
+            app:text="오더재고"
+            android:visibility="invisible"/>
+
+        <kr.co.rinnai.dms.common.custom.CustomMenuButtonView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/menu_07"
+            app:symbol="@drawable/menu_05_06_normal"
+            app:pressSymbol="@drawable/menu_05_06_press"
+            app:text="서비스접수"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</RelativeLayout>

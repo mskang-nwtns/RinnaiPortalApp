@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "kr.co.rinnai.dms"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.5.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+}
+
+dependencies {
+    //implementation 'com.google.firebase:firebase-core:16.0.1'
+    //implementation 'com.google.firebase:firebase-messaging:17.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'org.java-websocket:Java-WebSocket:1.3.9'
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.7'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.5.3'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+    implementation 'androidx.core:core:1.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.jaredrummler:twodscrollview:1.0.1'
+
+
+    implementation 'org.apache.httpcomponents:httpclient:4.5.3'
+    implementation 'com.github.karrel84:RellSignView:0.0.1'
+    api 'org.apache.httpcomponents:httpcore:4.4.6'
+    api 'org.apache.httpcomponents:httpmime:4.3.6'
+
+    // https://mvnrepository.com/artifact/ch.acra/acra
+    compileOnly files('sdk/device.sdk.jar')
+
+
+   // compile('com.crashlytics.sdk.android:crashlytics:2.7.0-SNAPSHOT@aar') {
+    //    transitive = true;
+    //}
+
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'

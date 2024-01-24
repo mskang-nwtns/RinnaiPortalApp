@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!---24dp-->
+	<RelativeLayout
+		android:id="@+id/top_layer"
+		android:layout_width="match_parent"
+		android:layout_height="34.7dp"
+		android:layout_marginTop="30.3dp"
+		android:layout_marginLeft="33.7dp"
+		android:layout_marginRight="36dp">
+		<ImageView
+			android:id="@+id/iv_user_icon"
+			android:layout_width="31.3dp"
+			android:layout_height="31.3dp"
+			android:src="@drawable/user_icon"
+			android:layout_centerVertical="true"/>
+		<TextView
+			android:id="@+id/tv_agency_user_no"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="10.7sp"
+			android:layout_toRightOf="@+id/iv_user_icon"
+			android:layout_marginLeft="11dp"
+			android:textColor="#cf000d"
+			android:lineSpacingExtra="-5.7sp"
+			android:text="ABC12345"/>
+
+		<TextView
+			android:id="@+id/tv_agency_user_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_agency_user_no"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="9.7dp"
+			android:layout_marginBottom="1dp"
+			android:layout_toRightOf="@+id/iv_user_icon"
+			android:lineSpacingExtra="-9sp"
+			android:text="홍길동"
+			android:textColor="#16133e"
+			android:textSize="14sp" />
+
+		<kr.co.rinnai.dms.common.custom.CustomButtonLogoutView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:id="@+id/btn_agency_logout"
+			app:symbol="@drawable/logout_icon"
+			app:pressSymbol="@drawable/logout_icon"
+			android:layout_centerVertical="true"
+			android:clickable="true"
+			app:text="로그아웃" />
+	</RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+
+	    android:id="@+id/installation_view_pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/top_layer"
+		android:layout_marginTop="29.3dp"
+		android:layout_marginBottom="74dp"
+		android:paddingLeft="33.7dp"
+		android:paddingRight="36dp"
+	    android:overScrollMode="never" />
+
+	<RelativeLayout
+		android:id="@+id/bottom_layer"
+		android:layout_width="match_parent"
+		android:layout_height="34.7dp"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="33.7dp"
+		android:layout_marginRight="36dp"
+		android:layout_marginBottom="36.7dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="34.7dp"
+			android:layout_centerInParent="true">
+			<ImageView
+				android:id="@+id/iv_agency_page_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/page_1_on"
+				/>
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/page_center"
+				android:layout_gravity="center_vertical"
+				android:layout_marginRight="5dp"
+				android:layout_marginLeft="5dp"
+				/>
+
+			<ImageView
+				android:id="@+id/iv_agency_page_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/page_2_off"
+				/>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

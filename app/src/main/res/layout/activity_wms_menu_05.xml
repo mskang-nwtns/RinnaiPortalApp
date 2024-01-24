@@ -1,0 +1,377 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="25.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="22.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/title_product_location_search"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+
+        <ImageView
+            android:layout_width="76.7dp"
+            android:layout_height="31.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22.7dp"
+            android:layout_marginRight="20.7dp"
+            android:src="@drawable/menu_05_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/tv_wms_activity_05_model_name"
+            android:layout_width="200dp"
+            android:layout_height="38.3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#4564e8"
+            android:lineSpacingExtra="-11sp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:background="@drawable/contents_area02_bg"
+            android:windowSoftInputMode="adjustResize|adjustPan"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_wms_activity_05_gas"
+            android:layout_toRightOf="@+id/tv_wms_activity_05_model_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="80dp"
+            android:layout_height="38.3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="20sp"
+            android:textColor="#4564e8"
+            android:lineSpacingExtra="-11sp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:background="@drawable/contents_area02_bg"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/wms_activity_05_gas_type_etc"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                    <CheckBox
+                        android:id="@+id/cb_wms_activity_05_gas_type_etc"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/user_id_save_check_box"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_rinnai_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="9sp"
+                        android:text="ETC"
+                        android:textColor="#47446f"/>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/wms_activity_05_gas_type_lpg"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <CheckBox
+                    android:id="@+id/cb_wms_activity_05_gas_type_lpg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/user_id_save_check_box"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/cb_rinnai_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="9sp"
+                    android:text="LPG"
+                    android:textColor="#47446f"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/wms_activity_05_gas_type_lng"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <CheckBox
+                    android:id="@+id/cb_wms_activity_05_gas_type_lng"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/user_id_save_check_box"
+                    android:button="@null" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/cb_rinnai_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="9sp"
+                    android:text="LNG"
+                    android:textColor="#47446f"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="43dp"
+        android:layout_weight="4"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="31.7dp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="14.7sp"
+                android:textColor="#585763"
+                android:text="신정보" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="31.7dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="38sp"
+                android:textColor="#4564e8"
+                android:id="@+id/tv_erp_product_count"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="31.7dp"
+                android:fontFamily="@font/nanum_gothic_bold"
+                android:textSize="14.7sp"
+                android:textColor="#585763"
+                android:text="WMS"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="31.7dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/tv_wms_product_count"
+                android:textSize="38sp"
+                android:textColor="#454182"
+                android:text=""/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_movement_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_weight="87"
+        android:orientation="vertical" 
+        android:visibility="visible">
+        
+        <!-- <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/cascade_grey"
+                android:orientation="vertical" >
+				
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="center_vertical"
+                    android:text="모델 이름"
+                    android:textColor="#505666"
+                    android:textSize="20sp" />
+			
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/cascade_grey"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="center_vertical"
+                        android:text="형식"
+                        android:textColor="#505666"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:gravity="center_vertical"
+                        android:text="수량"
+                        android:textColor="#505666"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout> -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp">
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/cascade_grey"
+                android:orientation="horizontal" >
+ㅡ
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/text_view_header_row_one"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-11sp"
+                    android:text="@string/title_release_location"
+                    android:textColor="#16133e"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/value_cell_detail"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_one"
+                    android:gravity="center"
+                    android:text="@string/value_cell_make"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/value_order_product_order_count"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+
+			</LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp"
+            android:paddingTop="3.7dp">
+
+            <ListView
+                android:id="@+id/lv_product_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:dividerHeight="1px"
+                android:scrollbars="vertical"
+                android:divider="#c7c8ca"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

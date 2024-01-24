@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp">
+
+
+        <RelativeLayout
+            android:id="@+id/btn_login_type_wms"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="WMS\n물류"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_login_type_wms_driver"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btn_login_type_wms"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="WMS\n배송기사"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_login_type_wms_retailer"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btn_login_type_wms_driver"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="WMS\n양판기사"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/btn_login_type_dms_employee"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/btn_login_type_wms"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="DMS\n영업"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id = "@+id/btn_login_type_dms_agency"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btn_login_type_dms_employee"
+            android:layout_below="@+id/btn_login_type_wms_driver"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/search_btn_selector">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20.7dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="6.2sp"
+                android:layout_centerInParent="true"
+                android:text="DMS\n대리점"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

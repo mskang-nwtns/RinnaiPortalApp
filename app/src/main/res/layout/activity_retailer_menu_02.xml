@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16.7dp"
+            android:layout_height="16.7dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginTop="25.3dp"
+            android:src="@drawable/index_item" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="22.7dp"
+            android:fontFamily="@font/nanum_gothic_extra_bold"
+            android:text="@string/installation_02_activity_title"
+            android:textColor="#16133e"
+            android:textSize="18.7sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_installation_02_date"
+            android:layout_width="170dp"
+            android:layout_height="26.3dp"
+            android:layout_marginTop="20.7dp"
+            android:layout_marginRight="17dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/calendar_selector">
+            <TextView
+                android:id="@+id/tv_installation_02_work_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="12.7sp"
+                android:textColor="#4564e8"
+                android:text="2019/09/26"/>
+
+            <ImageView
+                android:layout_width="16.7dp"
+                android:layout_height="16.7dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/calendar_bt" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_movement_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_weight="87"
+        android:orientation="vertical" 
+        android:visibility="visible">
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:layout_marginTop="16.3dp"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp">
+
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-11sp"
+                    android:text="@string/installation_02_activity_list_header_item_address_name"
+                    android:textColor="#16133e"
+                    android:textSize="16sp" />
+
+			</LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/cascade_grey"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/text_view_header_row_one"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-11sp"
+                    android:text="@string/installation_02_activity_list_header_item_model"
+                    android:textColor="#16133e"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/installation_02_activity_list_header_item_gas"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_one"
+                    android:gravity="center"
+                    android:text="@string/installation_02_activity_list_header_item_photo"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:textSize="16sp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/text_view_header_row_two"
+                    android:gravity="center"
+                    android:text="@string/installation_02_activity_list_header_item_signature"
+                    android:fontFamily="@font/nanum_gothic_bold"
+                    android:autoSizeMinTextSize="30sp"
+                    android:autoSizeMaxTextSize="80sp"
+                    android:autoSizeStepGranularity="5dp"
+                    android:textColor="#16133e"
+                    android:lineSpacingExtra="-11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12.7dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="11dp">
+
+            <ListView
+                android:id="@+id/lv_retailer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:groupIndicator="@null"
+                android:listSelector="@android:color/transparent"
+                android:dividerHeight="1px"
+                android:scrollbars="vertical"
+                android:divider="#c7c8ca"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

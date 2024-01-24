@@ -1,0 +1,22 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="popUp_X">14dp</dimen>
+    <dimen name="popUp_Y">93.3dp</dimen>
+    <dimen name="progress_limit">20.3dp</dimen>
+    <dimen name="progress_tranY">2.3dp</dimen>
+    <dimen name="progress_paddingLeft">1.3dp</dimen>
+    <dimen name="progress_paddingTop">0dp</dimen>
+    <dimen name="progress_maxWidth">16dp</dimen>
+    <dimen name="android_status_bar_offset">25dp</dimen>
+    <dimen name="setting_guide_height">561dp</dimen>
+    <dimen name="viewPager_offset">-190dp</dimen>
+    <dimen name="rollPager_offset">-270dp</dimen>
+    <dimen name="dimImageWidth">360dp</dimen>
+    <dimen name="smartMarginLeftSingle">134.7dp</dimen>
+    <dimen name="smartMarginLeftDouble">104.4dp</dimen>
+
+    <dimen name="optionalFont">18dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

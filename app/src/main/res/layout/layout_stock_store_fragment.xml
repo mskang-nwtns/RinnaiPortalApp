@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_aos_menu_03"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:groupIndicator="@null"
+    android:listSelector="@android:color/transparent"
+    android:dividerHeight="1px"
+    android:scrollbars="vertical"
+    android:divider="#c7c8ca" >
+
+</ListView>
